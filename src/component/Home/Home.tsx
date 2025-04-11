@@ -3,7 +3,6 @@ import Acardion from "./Acardion"
 import './home.css';
 import React, { useState, useEffect, useRef } from "react";
 import data from "../data.json";
-import { useSSR } from "react-i18next";
 
 export interface questionsInterface {
     question: string,
@@ -40,8 +39,8 @@ export default function Home() {
         if (value.length > 0) {
             const filterQuestions = dataQuestions.filter((element) => {
                 return element.question.toLocaleLowerCase().includes(searchInput.toLocaleLowerCase())
-                    || element.answer1.includes(searchInput.toLocaleLowerCase())
-                    || element.answer2.includes(searchInput.toLocaleLowerCase())
+                    || element.answer1.toLocaleLowerCase().includes(searchInput.toLocaleLowerCase())
+                    || element.answer2.toLocaleLowerCase().includes(searchInput.toLocaleLowerCase())
             })
             setDataQuestions(filterQuestions)
         }
@@ -63,7 +62,7 @@ export default function Home() {
                     onBlur={onBlur}
                     onChange={handleInputChange} />
                 <div className="d-flex align-items-center flex-column w-100">
-                    {data?.map((element, index) => {
+                    {dataQuestions?.map((element, index) => {
                         return (
                             <Acardion
                                 element={element}

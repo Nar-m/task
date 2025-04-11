@@ -25,7 +25,6 @@ const Form = forwardRef<divElement, input>((props: input, ref) => {
                     onBlur={onBlur}
                     onFocus={onFocus}
                     onChange={onChange}
-                    value={input}
                     id="search"
                     className="search-input" type="text" />
                 <label onClick={handleFocus} className={`${focus || input.length > 0 ? 'placholder top' : 'placholder'}`}>search...</label>
