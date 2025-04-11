@@ -1,0 +1,22 @@
+[
+    {
+        "question": "What is JavaScript?",
+        "answer1": "JavaScript is a programming language mainly used to make websites interactive You know how some websites have animations, dropdown menus, pop-ups, forms that check your input, or pages that update without reloading? That’s usually JavaScript working behind the scenes. At a basic level:",
+        "answer2": "JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript."
+    },
+    {
+        "question": "What is React Js?",
+        "answer1": "React.js (or just React) is a JavaScript library for building user interfaces — mainly for web applications. It was created by Facebook and is now maintained by Meta and a large community of developers.",
+        "answer2": "React lets you build user interfaces out of individual pieces called components. Create your own React components like Thumbnail, LikeButton, and Video. Then combine them into entire screens, pages, and apps. Whether you work on your own or with thousands of other developers, using React feels the same. It is designed to let you seamlessly combine components written by independent people, teams, and organizations."
+    },
+    {
+        "question": "What is Node Js?",
+        "answer1": "Node.js is a runtime environment that lets you run JavaScript code outside of a browser.",
+        "answer2": "It is used for server-side programming, and primarily deployed for non-blocking, event-driven servers, such as traditional web sites and back-end API services, but was originally designed with real-time, push-based architectures in mind. Every browser has its own version of a JS engine, and node."
+    },
+    {
+        "question": "What is Event Loop?",
+        "answer1": "The Event Loop is a fundamental concept in JavaScript (especially in environments like browsers and Node.js) that allows non-blocking execution of code, even though JavaScript itself is single-threaded. Here’s the idea in simple terms:",
+        "answer2": "Loops are computer programs that execute a set of instructions or a block of code a certain number of times without having to write it again until a certain condition is met. In other words, loops let your code execute one or more statements as many times as desired."
+    }
+]

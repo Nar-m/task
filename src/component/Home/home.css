@@ -1,0 +1,111 @@
+.search-conteiner {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.input-conteiner {
+    width: 100%;
+}
+
+.home-conteiner {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.search-conteiner .search-input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-radius: 10px;
+    padding: 0 10px;
+    border: 2px solid var(--border);
+}
+
+.search-conteiner .placholder {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    font-size: 20px;
+    transition: top .2s ease-in-out;
+    cursor: auto;
+    color: var(--color);
+    padding: 0 7px;
+}
+
+.search-conteiner .placholder.top {
+    top: -15px;
+    background: var(--placholder);
+}
+
+.search-conteiner .placholder.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.acardion-questions-item {
+    border-top-left-radius: 7px;
+    color: var(--color);
+    border: 1px solid var(--acardionBorder);
+    border-top-right-radius: 7px;
+    transition: all 0.3s ease-in-out;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: var(--acardionBackground);
+}
+
+.acardion-questions-item:hover {
+    border: 1px solid transparent;
+    box-shadow: 5px 5px 50px #2be679,
+        -5px -5px 50px rgba(0, 0, 0, 0.07) inset;
+}
+
+.acardion-questions-item .acardion-top {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.acardion-questions-item .acardion-top:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05),
+        -10px -10px 30px rgba(0, 0, 0, 0.07) inset;
+    color: #2ecc71;
+}
+
+.acardion-questions-item:hover .acardion-question-title {
+    transform: scale(1.1);
+}
+
+.acardion-questions-item .acardion-question-title {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.acardion-questions-item .acardion-question-title h1 {
+    font-size: 25px;
+    letter-spacing: 0.2px;
+}
+
+.btns-chevron {
+    transition: transform 0.3s ease-in-out;
+    font-size: 26px;
+}
+
+.accordion-answer p {
+    line-height: 2em;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.accordion-answer {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    transition: max-height 0.3s ease-in-out;
+    padding: 0 !important;
+}
+
+.accordion-answer.open {
+    padding: 16px;
+}

@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+  --background: url("https://erger.cc/templates/Erger/images/bg.jpg");
+  --color: #282828;
+  --headerBaackground: #fff;
+  --placholder: url("https://erger.cc/templates/Erger/images/bg.jpg");
+  --acardionBorder: #444445;
+  --acardionBackground: #fff;
+  --shadow: 0 0 35px rgba(132, 137, 143, .35);
+  --border: rgba(132, 137, 143, .35);
+}
+
+.dark-theme {
+  --background: url("https://erger.cc/templates/Erger/images/bg-night.png");
+  --color: #fff;
+  --headerBaackground: none;
+  --placholder: url("https://erger.cc/templates/Erger/images/bg-night.png");
+  --acardionBorder: none;
+  --acardionBackground: #444445;
+  --searchBackground: transparent;
+  --shadow: 0 0 10px rgba(187, 181, 181, 0.9);
+  --border: #2ecc71;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  background-image: var(--background);
+}
+
+ul {
+  list-style: none;
+}
+
+li,
+i {
+  cursor: pointer;
+}
+
+#main {
+  margin-top: 98.45px;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+#main {
+  margin-top: 120px;
+}
